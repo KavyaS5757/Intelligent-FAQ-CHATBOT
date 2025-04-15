@@ -1,7 +1,9 @@
 📚 **Intelligent FAQ Chatbot**
+
 This project is a Streamlit-based FAQ chatbot that allows users to upload a .pdf or .txt file and interact with it through natural language questions. The chatbot extracts the document content, indexes it using semantic embeddings, and provides context-aware answers to user queries.
 
 🔍 **Overview**
+
 Uses Sentence Transformers (all-MiniLM-L6-v2) to convert text chunks into vector embeddings.
 
 Employs FAISS for fast similarity search over the document content.
@@ -23,6 +25,7 @@ UI is built with Streamlit, featuring a simple document uploader, chat interface
    streamlit run faq_chat_ui.py
 
 💡 **Features**
+
 Upload .pdf or .txt files and process their content.
 
 Ask any question based on the uploaded content.
@@ -38,6 +41,7 @@ Chat history (collapsible for longer chats)
 🗑️ "Clear Chat" button to reset the session
 
 ✅ Assumptions
+
 The input documents are in English and contain well-structured text.
 
 For simplicity, FAISS is configured using a flat L2 index (good for small to medium-sized documents).
